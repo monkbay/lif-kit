@@ -30,7 +30,7 @@ $ARGUMENTS
 8. **If they said it is urgent** (`gấp`, `urgent`, `critical`), say which of the two urgent slots it takes and what it pushes behind. Two at a time per product is the cap. Without a cap everything becomes urgent, which is how the word stopped meaning anything here.
 
 9. **Three readings** of what they said, each a small picture, one marked `đề xuất`. Spatial words are always answered with a picture, never a sentence.
-10. **Build the page** per `references/artifact-pattern.md`: environment strip · their words · three readings · before/after · numbered changes · what already exists · size · the operator buttons (see step 12 for which ones).
+10. **Build the page** by copying `references/preview-page.html` and filling it in — see `references/artifact-pattern.md`: environment strip · their words · three readings · before/after · numbered changes · what already exists · size · the operator buttons (see step 12 for which ones).
 11. **Three lines in chat**: what you understood, the recommended reading, the link. Nothing more.
 12. **Wait for their choice, then take the lane that fits the size.** Small things must not be slowed down; big things must not be waved through.
 

@@ -70,6 +70,7 @@ tr:last-child td{border-bottom:none}
     <li>Hình màn hình hiện tại, đặt cạnh hình sau khi sửa.</li>
     <li>Danh sách thay đổi được đánh số, kèm kích thước công việc.</li>
     <li>Ticket được tạo sau khi bạn duyệt, kèm đúng hình bạn đã chọn.</li>
+    <li>Trang xem trước luôn cùng một bố cục: dải thông tin, lời bạn nói, ba cách hiểu, trước và sau, danh sách thay đổi, nút duyệt.</li>
   </ul>
   <p class="lbl" style="margin-top:16px">Lưu ý</p>
   <ul>
@@ -87,10 +88,11 @@ tr:last-child td{border-bottom:none}
   <pre>/needs-me</pre>
   <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
-    <li>Danh sách được đánh số, gồm ba loại: <b>Duyệt</b> một bản build, <b>Chọn</b> giữa hai phương án, <b>Gỡ kẹt</b> một việc đang tắc.</li>
+    <li>Danh sách được đánh số, gồm bốn loại: <b>Duyệt</b> một bản build, <b>Chọn</b> giữa hai phương án, <b>Gỡ kẹt</b> một việc đang tắc, <b>Kiểm tra</b> việc đã xây xong nhưng chưa ai xem trên màn hình.</li>
     <li>Mỗi dòng ghi rõ thay đổi gì, ai yêu cầu, và đã chờ bao lâu.</li>
     <li>Mỗi dòng kèm một phương án mặc định, sẽ áp dụng nếu đến hạn mà chưa có ai trả lời.</li>
     <li>Bạn có thể trả lời ngắn: <code>1 duyệt</code>, <code>2 chọn b</code>.</li>
+    <li>Việc đã xây xong mà chưa ai kiểm tra thì chưa tính là xong. Khi có hơn ba việc như vậy, Lif Kit gộp thành một dòng kèm số lượng, ưu tiên những việc đã tới người dùng thật, và chỉ sang <code>/proof</code> cho từng việc.</li>
   </ul>
 </div>
 
@@ -132,6 +134,7 @@ tr:last-child td{border-bottom:none}
   <ul>
     <li>Việc đã tới khách sạn trong 24 giờ, viết bằng lời thường.</li>
     <li>Việc còn kẹt, kèm người phụ trách và số ngày.</li>
+    <li>Số việc đã xây xong nhưng chưa ai kiểm tra.</li>
     <li>Một việc cần bạn xử lý hôm nay.</li>
     <li>Việc kẹt quá 12 giờ được nêu ngay, kèm người phụ trách và việc cần làm.</li>
   </ul>

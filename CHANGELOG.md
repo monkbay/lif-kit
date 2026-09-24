@@ -2,6 +2,11 @@
 
 Every release bumps the version, because the plugin cache is keyed by it: without a bump, `/plugin update` reports success and keeps serving the old copy. An update only takes effect in a new session — restart after updating.
 
+## 0.5.0 — 2026-09-24
+- `/needs-me` gains a fourth row type: **Kiểm tra** — built and waiting for a person to check it on screen. Finished but unverified work is not done, and a pile of it looks like progress while none of it has been seen. Grouped with a count past three, ranked by what reaches real users first.
+- `/brief` states how many items are built and unchecked.
+- The preview page ships as a template, `references/preview-page.html`, rather than being rebuilt from a written description each time — same palette, same structure, same labels for every operator.
+
 ## 0.4.1 — 2026-09-24
 - The 1:1 redraw is named as the normal route for a "before" frame, because a browser screenshot arrives as an image in the conversation and not as a file that can be uploaded. The kit no longer spends a cycle attempting an upload that cannot complete; the upload route applies only when a real image file exists.
 

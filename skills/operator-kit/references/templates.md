@@ -22,13 +22,14 @@ Every field listed is required. If you cannot fill one, say so on the line rathe
 - Verdict words from `honesty.md`.
 
 ## 3 · Cần bạn · Needs-me  (page when more than one item)
-- Numbered rows, three types: **Duyệt** approve · **Chọn** pick · **Gỡ kẹt** unblock.
+- Numbered rows, four types: **Duyệt** approve · **Chọn** pick · **Gỡ kẹt** unblock · **Kiểm tra** built and waiting to be checked on screen.
 - Each row: what it changes, what it costs, who raised it, how long it has waited, **the default and when it applies**.
 - Ranked by what is blocking the most other work.
 
 ## 4 · Bản tin · Brief  (chat only)
 - `Đã xong 24h qua` with a block bar and a count, each line in what-a-person-sees language.
 - `Vẫn kẹt` with owner and age in days; three days or more is called out.
+- `Chờ kiểm tra` — how many items are built but nobody has looked at them.
 - One closing line: the single thing that needs this person, pointing at `/needs-me`.
 - Under about twenty lines. No page.
 

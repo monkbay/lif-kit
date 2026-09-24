@@ -13,8 +13,9 @@ Window: $ARGUMENTS (default: the last 24 hours)
 1. **Preflight**, then pull **only the window**, never the whole board — ask for the date range and a sensible limit, and if the answer came back truncated say how many there were rather than implying you saw everything. Pull what **reached hotels** in the window, what **is waiting on a person**, and what **has not moved**. Group by product.
 2. Write each line in what-a-person-sees language, not ticket titles. A ticket id goes in brackets at most.
 3. Stuck items carry an owner and an age in days, measured from the last real status change rather than last-updated — a board that re-stamps tickets makes week-old blockages look fresh. Anything past 12 hours gets the stall treatment — one owner, one action, a default — and three days or more is called out plainly as rolling.
-4. End with the single thing that needs this person today, pointing at `/needs-me`.
-5. **Chat only.** Plain text, phone-readable, under about twenty lines, a bar of blocks for counts. Never build a page for this. Never send it on a schedule — it runs when someone types it.
+4. **Say how much is built and unchecked.** One line: how many items are finished but nobody has looked at them yet. This number grows silently and is the best early warning that the board has stopped meaning anything.
+5. End with the single thing that needs this person today, pointing at `/needs-me`.
+6. **Chat only.** Plain text, phone-readable, under about twenty lines, a bar of blocks for counts. Never build a page for this. Never send it on a schedule — it runs when someone types it.
 
 ## If something is missing
 - **No board connection** → say so in the first line, name the one step to fix it, and report only what this conversation and the code can show. An empty brief is correct; an invented one is not.
