@@ -11,6 +11,8 @@ Publish with the `db` capability (so presses persist) and `user` (so a press is 
 ## Start from the template, do not invent a layout
 `preview-page.html`, in this same folder, is the preview page: palette, structure, labels, the three readings, the before/after frames, the numbered changes and the working buttons. Copy it, replace the ⟨…⟩ parts, delete what does not apply, and publish. Every operator then sees the same page whoever produced it, and a request that moves between people still looks like one thing.
 
+The template leaves the inside of a screen frame to you, and gives you fragments for it — a card of rows, a list, a form, a toolbar, a progress bar, a grid, an empty slot, and `<mark>` for the part that changes. Build screens from those rather than inventing markup, so the same screen drawn by two people comes out the same.
+
 Change the template only where the content demands it — a different kind of screen to draw, a fourth reading, a missing section. Do not restyle it, and do not rebuild it from memory.
 
 ## Screens in the page: which route, and when

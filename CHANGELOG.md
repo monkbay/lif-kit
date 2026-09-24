@@ -2,6 +2,11 @@
 
 Every release bumps the version, because the plugin cache is keyed by it: without a bump, `/plugin update` reports success and keeps serving the old copy. An update only takes effect in a new session — restart after updating.
 
+## 0.6.0 — 2026-09-24
+Both from the five-for-five run on Kaydo, neither a failure.
+- The preview template carries ready-made screen fragments — a card of rows, a list, a form, a toolbar, a progress bar, a grid, an empty slot, and `<mark>` for the part that changes. The inside of a frame was the last place two people could draw the same screen differently.
+- A grouped row counts as one against the ten-row cap in `/needs-me`. A Kiểm tra row standing for thirty items is one decision for the reader, not thirty.
+
 ## 0.5.0 — 2026-09-24
 - `/needs-me` gains a fourth row type: **Kiểm tra** — built and waiting for a person to check it on screen. Finished but unverified work is not done, and a pile of it looks like progress while none of it has been seen. Grouped with a count past three, ranked by what reaches real users first.
 - `/brief` states how many items are built and unchecked.
