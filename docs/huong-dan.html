@@ -1,0 +1,156 @@
+<title>Hướng dẫn Lif Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#F5F6F4; --paper:#FFFFFF; --ink:#14181A; --line:#D8DEDC;
+  --acc:#1F4D7A; --ok:#0B7A48; --no:#BF362B;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1113; --paper:#171B1E; --ink:#F0F3F2; --line:#2A3235;
+  --acc:#7FA9DA; --ok:#3FC084; --no:#FF7B6C;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1113; --paper:#171B1E; --ink:#F0F3F2; --line:#2A3235;
+  --acc:#7FA9DA; --ok:#3FC084; --no:#FF7B6C;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 var(--sans);font-variant-numeric:tabular-nums;padding-inline:20px;padding-block:0 60px}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.08;letter-spacing:-.025em;font-weight:800;margin:32px 0 10px}
+h2{font-size:26px;letter-spacing:-.02em;font-weight:750;margin:44px 0 16px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+p{margin:0 0 14px;max-width:68ch}
+code{font-family:var(--mono);font-size:.92em;background:var(--paper);border:1px solid var(--line);padding:2px 7px;border-radius:5px}
+ol.install{list-style:none;counter-reset:i;margin:0;padding:0;display:grid;gap:14px}
+ol.install li{counter-increment:i;position:relative;padding-left:44px;font-size:18px}
+ol.install li::before{content:counter(i);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:8px;background:var(--acc);color:#fff;font-weight:750;font-size:16px;display:grid;place-items:center}
+pre{font:600 16px/1.6 var(--mono);white-space:pre-wrap;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin:10px 0 0;overflow-x:auto}
+.cmd{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:0 0 18px}
+.cmd .n{font-family:var(--mono);font-weight:600;font-size:25px;color:var(--acc);letter-spacing:-.02em}
+.cmd .w{font-size:20px;font-weight:650;margin:8px 0 16px}
+.lbl{font-weight:750;font-size:16px;margin:0 0 6px}
+.cmd ul{margin:6px 0 0;padding-left:24px}
+.cmd li{margin-bottom:6px}
+.rule{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--no);border-radius:12px;padding:18px 22px;margin:0 0 14px}
+.rule.g{border-left-color:var(--ok)}
+.rule b{display:block;font-size:19px;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);font-size:17px}
+th{font-weight:750;background:var(--bg)}
+tr:last-child td{border-bottom:none}
+</style>
+<div class="wrap">
+
+<h1>Lif Kit — hướng dẫn dùng</h1>
+<p>Năm câu lệnh để bạn yêu cầu, duyệt và kiểm tra công việc trên Bellhop và Lifrooms, mà không cần biết code.</p>
+
+<h2>Cài đặt</h2>
+<ol class="install">
+<li>Mở Claude Code, gõ hai dòng này:
+<pre>/plugin marketplace add OWNER/lif-kit
+/plugin install lif-kit@migaki</pre></li>
+<li>Khởi động lại Claude Code.</li>
+<li>Gõ <code>/</code> — bạn phải thấy năm lệnh bên dưới. Nếu chưa thấy, khởi động lại lần nữa.</li>
+</ol>
+<p style="margin-top:16px">Khi có bản mới: gõ <code>/plugin update lif-kit@migaki</code> rồi khởi động lại. Bản mới chỉ có hiệu lực sau khi khởi động lại.</p>
+
+<h2>Năm câu lệnh</h2>
+
+<div class="cmd">
+  <div class="n">/preview</div>
+  <div class="w">Xem ảnh của thứ bạn muốn, trước khi có ai xây.</div>
+  <p class="lbl">Bạn gõ</p>
+  <pre>/preview sơ đồ phòng chật quá, đẩy thanh bên sang phải</pre>
+  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <ul>
+    <li>Ba cách hiểu yêu cầu của bạn, mỗi cách một hình nhỏ — bạn chọn một.</li>
+    <li>Ảnh màn hình hiện tại, đặt cạnh hình sau khi sửa.</li>
+    <li>Danh sách thay đổi có số, và kích thước công việc.</li>
+    <li>Ticket được tạo sau khi bạn bấm duyệt, kèm đúng hình bạn đã chọn.</li>
+  </ul>
+  <p class="lbl" style="margin-top:16px">Lưu ý</p>
+  <ul>
+    <li>Việc nhỏ và rõ ràng, ví dụ sai chính tả: nó trả lời một dòng và tạo ticket luôn, không bắt bạn xem ba hình.</li>
+    <li>Việc lớn, hoặc dính tới tích hợp, phân quyền, nhiều khách sạn: nó cho bạn xem ticket trước khi tạo.</li>
+    <li>Báo lỗi cũng dùng lệnh này. Màn hình đã có mà chạy sai thì tính là bảo hành.</li>
+    <li>Kéo ảnh chụp màn hình hoặc ảnh mockup vào cùng lúc. Ảnh bạn gửi là chuẩn, kể cả màu sắc.</li>
+  </ul>
+</div>
+
+<div class="cmd">
+  <div class="n">/needs-me</div>
+  <div class="w">Mọi thứ đang chờ bạn quyết, trong một danh sách.</div>
+  <p class="lbl">Bạn gõ</p>
+  <pre>/needs-me</pre>
+  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <ul>
+    <li>Danh sách có số, ba loại: <b>Duyệt</b> một bản build, <b>Chọn</b> giữa hai phương án, <b>Gỡ kẹt</b> việc đang tắc.</li>
+    <li>Mỗi dòng ghi rõ nó thay đổi gì, ai yêu cầu, chờ bao lâu rồi.</li>
+    <li>Mỗi dòng có một phương án mặc định, sẽ áp dụng nếu tới giờ mà không ai trả lời.</li>
+    <li>Trả lời ngắn cũng được: <code>1 duyệt</code>, <code>2 chọn b</code>.</li>
+  </ul>
+</div>
+
+<div class="cmd">
+  <div class="n">/proof</div>
+  <div class="w">Bằng chứng nó chạy thật, và chỗ để xem.</div>
+  <p class="lbl">Bạn gõ</p>
+  <pre>/proof BELL-0921-0005</pre>
+  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <ul>
+    <li>Nó tự mở màn hình đó, bấm thử, và chụp lại từng bước.</li>
+    <li>Ảnh đã duyệt đặt cạnh ảnh thực tế đang chạy, kèm chỗ nào khác nhau.</li>
+    <li>Xem ở đâu: tên màn hình, đường link, khách sạn nào đã bật và chưa bật.</li>
+    <li>Một cách kiểm tra 30 giây để bạn tự xác nhận.</li>
+  </ul>
+</div>
+
+<div class="cmd">
+  <div class="n">/track</div>
+  <div class="w">Một việc đang ở đâu, chờ gì. Gõ tên, không cần nhớ mã ticket.</div>
+  <p class="lbl">Bạn gõ</p>
+  <pre>/track sơ đồ phòng
+/track cái quỹ tiền mặt lễ tân</pre>
+  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <ul>
+    <li>Mốc thời gian: tạo lúc nào, xây lúc nào, chờ từ lúc nào.</li>
+    <li>Đang chờ gì, một câu.</li>
+    <li>Một người phụ trách và một việc cần làm, kèm thời gian dự kiến.</li>
+    <li>Hỏi về một màn hình thì nó trả lời màn hình đó nằm ở đâu và khách sạn nào đang bật.</li>
+  </ul>
+</div>
+
+<div class="cmd">
+  <div class="n">/brief</div>
+  <div class="w">24 giờ qua: xong gì, kẹt gì, cần bạn việc gì.</div>
+  <p class="lbl">Bạn gõ</p>
+  <pre>/brief</pre>
+  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <ul>
+    <li>Việc đã tới khách sạn trong 24 giờ, viết bằng lời thường.</li>
+    <li>Việc còn kẹt, kèm người phụ trách và số ngày.</li>
+    <li>Một việc cần bạn hôm nay.</li>
+    <li>Việc nào kẹt quá 12 giờ sẽ được nêu ngay, kèm người phụ trách và việc cần làm.</li>
+  </ul>
+</div>
+
+<h2>Bốn điều nó không làm</h2>
+<div class="rule"><b>Không hỏi bạn về tech</b>Không hỏi đường dẫn file, không hỏi bảng dữ liệu. Cần quyết thì nó hỏi bằng câu hỏi nghiệp vụ, kèm hai lựa chọn và một đề xuất.</div>
+<div class="rule"><b>Không nói "xong" khi chưa có bằng chứng</b>Không mở được màn hình thì nó ghi "chưa chứng minh được" và nói cần gì để chứng minh.</div>
+<div class="rule"><b>Không sửa hàng loạt ticket</b>Mỗi lần một ticket, đúng thứ bạn yêu cầu, và nó báo lại đã đổi gì.</div>
+<div class="rule"><b>Không gửi tin thay bạn</b>Cần báo ai thì nó soạn sẵn, bạn bấm gửi.</div>
+
+<h2>Khi nó không làm được</h2>
+<table>
+<tr><th>Tình huống</th><th>Nó sẽ làm gì</th></tr>
+<tr><td>Chưa kết nối bảng ticket</td><td>Nói thẳng ngay dòng đầu và chỉ cách sửa. Không bịa ticket, không bịa ngày.</td></tr>
+<tr><td>Không mở được màn hình</td><td>Ghi "chưa chứng minh được", kèm cách kiểm tra 30 giây để bạn tự xem.</td></tr>
+<tr><td>Chưa có tài khoản test trên staging</td><td>Nói rõ đó là việc đang chặn. Không test trên dữ liệu thật của khách sạn.</td></tr>
+<tr><td>Cần đăng nhập</td><td>Nhờ bạn tự đăng nhập. Nó không bao giờ nhận mật khẩu hay mã OTP.</td></tr>
+<tr><td>Hỏi về giá, chi phí, credit</td><td>Chuyển cho Kien. Nó chỉ nói kích thước công việc.</td></tr>
+</table>
+
+</div>
