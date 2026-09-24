@@ -1,11 +1,11 @@
 # Known gaps — what the kit cannot fix from the outside
-Written 2026-09-24. Nothing here blocks the kit shipping; each one makes it better.
+None of these block the kit. Each one makes it better, and each needs work on the product rather than on the kit.
 
-1. **A staging test login per product.** `/proof` opens the real screen. Without a stable test account on staging it falls back to production or to "not proven". This is the single highest-value item.
-2. **Notify the person who raised a ticket** when it changes state. The kit can only answer when asked; it cannot push. Until then, nobody learns something is live without typing `/brief`.
-3. **One environment label on every ticket** — staging or production, and which hotels the flag is on for. The kit currently infers this and sometimes cannot.
-4. **Stop double-posting from the bot.** Roughly 97% of two channels is machine noise; the kit reduces what people must read but cannot silence the source.
+1. **A test login on staging, per product.** `/proof` opens the real screen. Without a stable test account it falls back to "not proven". This is the highest-value item by a distance.
+2. **Notify the person who raised a ticket when it changes state.** The kit answers when asked; it cannot push. Until then nobody learns something is live without running `/brief`.
+3. **One environment label on every ticket** — staging or production, and which customers have the feature switched on. The kit infers this today and sometimes cannot.
+4. **Quieten duplicate bot posts.** The kit reduces what a person must read; it cannot silence the source.
 5. **A parent link on every bug.** With it, warranty versus billable is automatic instead of presumed.
-6. **Answer-length failures.** The long "❌ Có lỗi xảy ra" replies were mostly the model hitting its answer-length cap while writing a full spec. Splitting long replies fixes it at the source.
-7. **A health check on the release pipeline.** A promote job logged "ok" for eight days while broken. The kit reports what it sees; it cannot watch the pipeline.
-8. **A browser screenshot cannot be placed in a page as an image.** The capture comes back to the agent as an image in the conversation, not as a file on disk, so there is nothing to upload. Every "before" frame is therefore a 1:1 redraw labelled with the address and capture time — honest, and good enough in practice. If a pixel-exact frame is ever needed, the route is a headless browser run that writes a real PNG to disk, which then needs its own logged-in session state to reach anything behind a login.
+6. **Split long agent replies.** Replies that hit the model's answer-length cap fail silently and get retried by hand.
+7. **A health check on the release pipeline.** The kit reports what it can see; it cannot watch a deploy job.
+8. **A browser screenshot cannot be placed in a page as an image.** The capture reaches the agent as an image in the conversation, not as a file, so every "before" frame is a 1:1 redraw labelled with the address and capture time. Honest, and enough in practice. A pixel-exact frame would need a headless browser writing a real file, with its own logged-in session.

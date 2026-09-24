@@ -35,7 +35,7 @@ Before the first answer that touches the board, state what you are connected to 
 
 Write it in the language the person is using — the first line for Vietnamese, the second for English. The language rule applies to this line like every other.
 
-Name the board you actually found, whatever product it belongs to — this kit is not limited to Bellhop. Check honestly rather than assuming: list your own tools, and try one cheap read before claiming the board works. If the board is missing, points at a product other than the one being discussed, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
+Name the board you actually found, whatever product it belongs to. Check honestly rather than assuming: list your own tools, and try one cheap read before claiming the board works. If the board is missing, points at a product other than the one being discussed, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
 
 ## Working degraded — never hide it, never invent
 Any of these can be absent on someone's machine. Each has one correct behaviour:
@@ -75,7 +75,7 @@ Read `references/when-to-draw.md` before choosing. The short version: **if the a
 4. **Write to the board one ticket at a time.** Never a bulk status change, never a sweep, never a status you were not asked to set. A tool once moved 62 tickets to Deployed in one go; nothing in this kit may do that again. Echo every write back in one line: what changed, on which ticket, from what to what.
 
 ## The products
-`references/product-map.md`: the screens, the products, the hotels, and the words staff use for them. Verify before relying on a line in it, and correct the file when you learn something new.
+`references/product-map.md`: a template for the product on this machine — its screens, where features switch on, its numbers and its integrations. Verify before relying on a line in it, and correct the file when you learn something new.
 
 ## What this round does not do
 Anything needing engineering work on the products themselves — notifications, board automations, staging test logins, environment fixes — is out of scope for the kit. Note it in `KNOWN-GAPS.md` at the repo root instead of building around it.

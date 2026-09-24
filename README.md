@@ -1,6 +1,6 @@
 # Lif Kit
 
-Five commands for people who build software by describing it. For the Lifrooms and Bellhop teams.
+Five commands for people who build software by describing it, without writing code.
 
 ## Cài đặt · Install
 
@@ -45,7 +45,7 @@ Stalls surface the moment anyone runs a command — with one owner and one actio
 (kéo ảnh chụp màn hình vào cùng lúc — nó đọc được ảnh)
 
 ```
-/proof BELL-0921-0005
+/proof PROJ-0921-0005
 /track cái quỹ tiền mặt lễ tân
 /needs-me
 /brief

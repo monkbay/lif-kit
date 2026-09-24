@@ -2,6 +2,10 @@
 
 Every release bumps the version, because the plugin cache is keyed by it: without a bump, `/plugin update` reports success and keeps serving the old copy. An update only takes effect in a new session — restart after updating.
 
+## 0.7.0 — 2026-09-24
+- The repository is public so it can be installed without an account. Everything naming a specific customer's product, screens, hotels, integrations or delivery problems has been removed: `product-map.md` is now a template to fill in for whatever product is on the machine, and the gaps list reads as generic engineering asks. Product facts belong in the project's own `CLAUDE.md`, not in a shared plugin.
+- Added a licence: install and use as-is, no redistribution or derivative works.
+
 ## 0.6.0 — 2026-09-24
 Both from the five-for-five run on Kaydo, neither a failure.
 - The preview template carries ready-made screen fragments — a card of rows, a list, a form, a toolbar, a progress bar, a grid, an empty slot, and `<mark>` for the part that changes. The inside of a frame was the last place two people could draw the same screen differently.

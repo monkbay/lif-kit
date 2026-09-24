@@ -4,14 +4,14 @@
     "name": "Migaki Ventures"
   },
   "metadata": {
-    "description": "Operator tooling for Lifrooms and Bellhop"
+    "description": "Operator tooling for people who build software by describing it"
   },
   "plugins": [
     {
       "name": "lif-kit",
       "source": "./",
       "description": "Five commands for operators: /preview, /needs-me, /proof, /track, /brief.",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "category": "productivity"
     }
   ]
