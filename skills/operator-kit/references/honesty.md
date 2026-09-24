@@ -8,8 +8,8 @@
 ## Three states for a frame, not two
 Label every "before" frame with exactly one of these, and never leave it unlabelled:
 
-1. **Ảnh chụp thật** — the screenshot itself, shown in the page, with the address and the time it was taken. Always prefer this: upload the image to the page rather than redrawing it (see `artifact-pattern.md`).
-2. **Vẽ lại từ ảnh chụp** — redrawn from a screenshot you really took, when the image itself could not be placed in the page. Name the address and the time of the capture on the frame, so the reader knows the drawing came from something real. This is honest, and it is the common case.
+1. **Vẽ lại từ ảnh chụp** — redrawn 1:1 from a screenshot you really took, with the address and the time of capture named on the frame. **This is the normal route**, because a browser screenshot arrives as an image in the conversation rather than as a file that can be uploaded. It is honest and it is enough: the operator recognises their own screen.
+2. **Ảnh chụp thật** — the image itself placed in the page, when you genuinely have it as a file (the operator attached it, or a script produced it). See `artifact-pattern.md`.
 3. **Phác thảo — chưa kiểm chứng** — a sketch. You never saw the screen. Say in one line why, and what would let you verify it.
 
 A redrawing is not a sketch, and a sketch is never presented as either of the first two.

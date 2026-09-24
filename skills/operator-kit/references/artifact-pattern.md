@@ -8,15 +8,13 @@ Publish with the `db` capability (so presses persist) and `user` (so a press is 
 
 **If the capabilities skill or the page tool is not available on this machine**, do not guess at the API. Write a self-contained HTML file into the current folder instead, tell them the path, and put the same three lines in chat. A local file that opens is worth more than a broken link.
 
-## Putting a real screenshot in the page
-A drawing of a screen is second best. Put the real image in:
+## Screens in the page: which route, and when
+**Do you have the screen as a file on disk?**
 
-1. Take the screenshot through the browser and save it to a file.
-2. Declare the `assets` capability on the page alongside `db` and `user`.
-3. Upload the image to the page's own asset store, and reference it by the URL the upload returns, exactly as given. Load the `artifact-capabilities` skill for the exact calls before writing the page — do not guess at them.
-4. Caption it with the address and the time of capture.
+- **No — the usual case.** A browser screenshot comes back as an image in the conversation, not as a file you can reach, so there is nothing to upload. Look at it, then **redraw the screen 1:1** and label the frame **Vẽ lại từ ảnh chụp**, naming the address and the time of capture. Do not spend a cycle hunting for a path that was never written. This is the expected route, not a failure.
+- **Yes — a file exists.** An image the operator attached, an export, or one a script produced. Then put the real thing in: declare the `assets` capability alongside `db` and `user`, upload the file to the page's asset store, reference it by the URL the upload returns exactly as given, and caption it with the address and time. Load the `artifact-capabilities` skill for the exact calls first — do not guess at them.
 
-If uploads are unavailable on this machine, redraw the screen and label the frame **Vẽ lại từ ảnh chụp**, naming the address and time of the capture — state 2 in `honesty.md`. Never present a redrawing as the screenshot itself.
+Either way the frame carries a label from `honesty.md`, and a redrawing is never presented as the screenshot itself.
 
 ## Documents to write
 - `previews/<ticket-or-slug>` — the chosen reading, the verdict, and any note.

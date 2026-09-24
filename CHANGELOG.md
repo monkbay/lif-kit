@@ -2,6 +2,9 @@
 
 Every release bumps the version, because the plugin cache is keyed by it: without a bump, `/plugin update` reports success and keeps serving the old copy. An update only takes effect in a new session — restart after updating.
 
+## 0.4.1 — 2026-09-24
+- The 1:1 redraw is named as the normal route for a "before" frame, because a browser screenshot arrives as an image in the conversation and not as a file that can be uploaded. The kit no longer spends a cycle attempting an upload that cannot complete; the upload route applies only when a real image file exists.
+
 ## 0.4.0 — 2026-09-24
 Found by a live run of all five commands against the Kaydo board and product.
 - A frame now has **three** honest states, not two: the real screenshot, redrawn from a screenshot you took (address and time named), or a sketch you never verified. A redrawing is not a sketch.
