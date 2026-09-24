@@ -14,7 +14,7 @@ Filter: $ARGUMENTS
    - **Duyệt** — a build waiting for a person to approve it
    - **Chọn** — a question with two possible answers, blocking work
    - **Gỡ kẹt** — stalled on something only a person can do (a login, a credential, an owner)
-2. **Every row carries**: what it changes in plain words · what it costs (size and credits, or `miễn phí — bảo hành`) · who raised it · how long it has waited · **the default and the time it applies**. Work the default out yourself if none exists, and label it as yours.
+2. **Every row carries**: what it changes in plain words · how big it is (micro · small · medium · large · XL, or `bảo hành` for a warranty fix) · who raised it · how long it has waited · **the default and the time it applies**. Work the default out yourself if none exists, and label it as yours.
 3. **Rank by what is blocking the most other work**, not by age. Anything urgent sits at the top, and if more than two per product are marked urgent, say so — that is a queue problem, not a priority.
 4. **Sweep for stalls while you are here**: anything that has not moved in 12 hours joins the list as a `Gỡ kẹt` row with its age. The kit cannot push a message on its own, so this sweep is how a stall reaches a person.
 5. **Surface**: one item → answer in chat. Two or more → build the page with real buttons, and put the count plus the link in chat.

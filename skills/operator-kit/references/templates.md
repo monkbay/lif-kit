@@ -3,13 +3,13 @@
 Every field listed is required. If you cannot fill one, say so on the line rather than dropping it.
 
 ## 1 · Xem trước · Preview  (page + 3 lines in chat)
-- **Environment strip**: product, staging or production, which hotel's data, size and credits.
+- **Environment strip**: product, staging or production, which hotel's data, size (micro · small · medium · large · XL).
 - **Their words**, quoted exactly, in their language.
 - **Three readings** of the request, each a small picture, one marked "đề xuất / recommended".
 - **Before / after** of the real screen. Before is a screenshot or labelled a sketch.
 - **Numbered changes** — each one a thing a person would notice.
 - **Đã có sẵn / Already exists** — what is being extended rather than created, and any competing data source.
-- **Operator buttons**: `✓ Duyệt` · `✎ Sửa #n` · `Tách nhỏ`.
+- **Operator buttons**, labelled for the lane: `✓ Duyệt · tạo luôn` on a micro/small change, `✓ Duyệt · xem ticket trước` on anything medium or bigger or anything irreversible — plus `✎ Sửa #n` and `Tách nhỏ`. A button says exactly what it will do.
 - Never a third frame here. Before and after only.
 - **If a picture was attached**, it is the specification: the "after" frame reproduces it, colours included. Say in one line what you took from it.
 - **If they marked it urgent** (`gấp`, `urgent`, `critical`): say which of the two urgent slots it takes and what it pushes behind it. Two urgent items at a time, per product, is the cap — with no cap, everything becomes urgent and the word stops working.

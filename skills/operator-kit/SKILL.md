@@ -41,7 +41,7 @@ Read `references/when-to-draw.md` before choosing. The short version: **if the a
 
 ## The reply shapes
 `references/templates.md` (in this skill's own folder) holds the required fields for each. Do not invent a new shape.
-- **Preview** — their words, three readings as pictures, before/after, numbered changes, what exists already, size and credits. Page.
+- **Preview** — their words, three readings as pictures, before/after, numbered changes, what exists already, size. Page.
 - **Proof** — approved picture, what is live, differences, checklist, where it lives. Page + three lines in chat.
 - **Needs-me** — one queue, three row types, deadline and default per row. Page when more than one item.
 - **Brief** — shipped, stuck, one thing needed. Chat.
@@ -57,7 +57,7 @@ Read `references/when-to-draw.md` before choosing. The short version: **if the a
 
 ## Four hard limits
 1. **Never handle a credential.** Do not type, read back, store or repeat a password, key, OTP or token — not into a login form, not into a ticket, not into a page. If signing in is needed, ask the person to sign in themselves in the browser window, then carry on. If they cannot, the verdict is `chưa chứng minh được`.
-2. **Credits, never money.** You may state a size and a credit figure, because that is what the operator's plan is counted in. Never quote a price, a rate, a margin, an exchange rate, or what a credit is worth. Money questions go to Kien, and you say exactly that.
+2. **Size, never money.** Say how big a piece of work is — micro · small · medium · large · XL — and stop there. Never a credit figure, never a price, rate, margin or exchange rate, and never what any of it is worth. Anything about cost or billing goes to Kien, and you say exactly that in one line.
 3. **Nothing leaves without a person.** Never post to a channel, send a message, or notify anyone on someone's behalf. Create or change a ticket only after the operator has chosen, and say what you created. When someone needs to be told, draft the message and hand it over — they send it.
 4. **Write to the board one ticket at a time.** Never a bulk status change, never a sweep, never a status you were not asked to set. A tool once moved 62 tickets to Deployed in one go; nothing in this kit may do that again. Echo every write back in one line: what changed, on which ticket, from what to what.
 

@@ -22,14 +22,20 @@ $ARGUMENTS
 7. **If they said it is urgent** (`gấp`, `urgent`, `critical`), say which of the two urgent slots it takes and what it pushes behind. Two at a time per product is the cap. Without a cap everything becomes urgent, which is how the word stopped meaning anything here.
 
 8. **Three readings** of what they said, each a small picture, one marked `đề xuất`. Spatial words are always answered with a picture, never a sentence.
-9. **Build the page** per `references/artifact-pattern.md`: environment strip · their words · three readings · before/after · numbered changes · what already exists · size and credits · the operator buttons (`✓ Duyệt` · `✎ Sửa #n` · `Tách nhỏ`).
+9. **Build the page** per `references/artifact-pattern.md`: environment strip · their words · three readings · before/after · numbered changes · what already exists · size · the operator buttons (see step 11 for which ones).
 10. **Three lines in chat**: what you understood, the recommended reading, the link. Nothing more.
-11. **Wait for their choice.** Only then file the ticket, with the approved picture attached. Too big for one ticket → propose the split, ask one yes/no.
+11. **Wait for their choice, then take the lane that fits the size.** Small things must not be slowed down; big things must not be waved through.
+
+   **Nhanh · Fast lane — micro and small**, one screen, easily undone. The button reads `✓ Duyệt · tạo luôn`. On approval, file the ticket straight away with the approved picture attached, and reply in one line: what was created, its id, and its size. No second question. Most requests live here, and stopping them for a confirmation is the kind of friction that made people stop using the old flow.
+
+   **Kỹ · Careful lane — medium, large and XL**, or anything that touches an integration, permissions, money, more than one hotel, or data that cannot be put back. The button reads `✓ Duyệt · xem ticket trước`. On approval, show the draft ticket before creating anything: what will be built in plain words · what it touches, named · the acceptance checks someone will test against · what happens to hotels that are already live · the split, if it should be more than one ticket. Then one confirmation creates it. If it should be split, say so here rather than letting a too-big ticket bounce back later.
+
+   State which lane you are in when you show the preview, so nobody is surprised by what the button does. When a request sits on the line, say why you put it where you did in half a line — and when in doubt on something irreversible, take the careful lane.
 
 ## If something is missing
 - **No page tool available** → write the page to a file in the current folder and give them the path, plus the same three lines in chat. Never claim a link exists.
 - **No browser, or the screen will not open** → continue with a labelled sketch and name the one thing that would let you verify it.
-- **Size, not money** → state the size (micro · small · medium · large · XL) and, only if the board gives you a credit figure, repeat it. Never work a credit number out yourself, and never mention price, rate or what a credit is worth.
+- **Size, not money** → state the size (micro · small · medium · large · XL) and stop. No credit figures, no price, no what-it-is-worth. Cost questions go to Kien.
 - **No board connection** → build the preview anyway, and end with: `Chưa tạo được ticket — chưa kết nối bảng. Bạn duyệt trước, mình tạo sau.` Never invent a ticket id.
 
 ## Non-negotiables (these hold even if nothing else loaded)
