@@ -17,9 +17,10 @@ Filter: $ARGUMENTS
 2. **Every row carries**: what it changes in plain words · how big it is (micro · small · medium · large · XL, or `bảo hành` for a warranty fix) · who raised it · how long it has waited · **the default and the time it applies**. Work the default out yourself if none exists, and label it as yours.
 3. **Rank by what is blocking the most other work**, not by age. Anything urgent sits at the top, and if more than two per product are marked urgent, say so — that is a queue problem, not a priority.
 4. **Sweep for stalls while you are here**: anything that has not moved in 12 hours joins the list as a `Gỡ kẹt` row with its age. The kit cannot push a message on its own, so this sweep is how a stall reaches a person.
-5. **Surface**: one item → answer in chat. Two or more → build the page with real buttons, and put the count plus the link in chat.
-6. **Never press a button for a person.** A default applies only once its stated time has passed, and applying one is announced.
-7. Accept short replies: `1 duyệt`, `2 chọn b`, `3 gỡ kẹt: Gieng`. Act, then write what you did onto that row.
+5. **Cap the list at ten.** More than ten waiting means the queue itself is the problem: show the ten that block the most, say how many more there are, and say plainly that a queue this long needs a decision about the queue, not ten more decisions.
+6. **Surface**: one item → answer in chat. Two or more → build the page with real buttons, and put the count plus the link in chat.
+7. **Never press a button for a person.** A default applies only once its stated time has passed, and applying one is announced.
+8. Accept short replies: `1 duyệt`, `2 chọn b`, `3 gỡ kẹt: Gieng`. Act, then write what you did onto that row.
 
 ## If something is missing
 - **No board connection** → say `Chưa kết nối bảng nên chưa thấy được việc đang chờ`, name the one step to fix it, and list only what is waiting inside this conversation. Never invent rows.

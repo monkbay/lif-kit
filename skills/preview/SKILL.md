@@ -38,6 +38,8 @@ $ARGUMENTS
 
    **Kỹ · Careful lane — medium, large and XL**, or anything that touches an integration, permissions, money, more than one hotel, or data that cannot be put back. The button reads `✓ Duyệt · xem ticket trước`. On approval, show the draft ticket before creating anything: what will be built in plain words · what it touches, named · the acceptance checks someone will test against · what happens to hotels that are already live · the split, if it should be more than one ticket. Then one confirmation creates it. If it should be split, say so here rather than letting a too-big ticket bounce back later.
 
+   If nobody is there to answer — an unattended or scripted run — do not sit waiting and do not decide for them. Leave the preview, say what it is waiting on, and stop.
+
    State which lane you are in when you show the preview, so nobody is surprised by what the button does. When a request sits on the line, say why you put it where you did in half a line — and when in doubt on something irreversible, take the careful lane.
 
 ## If something is missing

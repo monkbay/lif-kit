@@ -1,4 +1,6 @@
 # The products, screens and words
+
+**If the board you are connected to is not Lifrooms or Bellhop, ignore everything below.** This kit works on any product; this file is the Lifrooms/Bellhop entry. Learn that product from its own repo, its `CLAUDE.md` and the board, and never carry hotel assumptions into it. Nothing here is a fallback for a product you do not recognise.
 **Seed file — verify a line before relying on it, and correct it here when you learn something new.** Last touched 2026-09-24.
 
 ## Bellhop — hotel PMS + channel manager

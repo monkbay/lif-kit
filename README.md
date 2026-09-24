@@ -13,6 +13,15 @@ In Claude Code, run these two lines:
 
 Then restart Claude Code. Type `/` and you should see the five commands.
 
+Khi có bản mới · To get a newer version:
+
+```
+/plugin update lif-kit@migaki
+```
+
+Rồi khởi động lại Claude Code — bản mới chỉ có hiệu lực sau khi khởi động lại.
+Then restart: an update only takes effect in a new session.
+
 You do not need to install anything else. If `/track` already finds your tickets, your board connection is fine — leave it alone.
 
 ## Năm lệnh · The five commands
