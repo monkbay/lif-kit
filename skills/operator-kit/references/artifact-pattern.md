@@ -8,6 +8,16 @@ Publish with the `db` capability (so presses persist) and `user` (so a press is 
 
 **If the capabilities skill or the page tool is not available on this machine**, do not guess at the API. Write a self-contained HTML file into the current folder instead, tell them the path, and put the same three lines in chat. A local file that opens is worth more than a broken link.
 
+## Putting a real screenshot in the page
+A drawing of a screen is second best. Put the real image in:
+
+1. Take the screenshot through the browser and save it to a file.
+2. Declare the `assets` capability on the page alongside `db` and `user`.
+3. Upload the image to the page's own asset store, and reference it by the URL the upload returns, exactly as given. Load the `artifact-capabilities` skill for the exact calls before writing the page — do not guess at them.
+4. Caption it with the address and the time of capture.
+
+If uploads are unavailable on this machine, redraw the screen and label the frame **Vẽ lại từ ảnh chụp**, naming the address and time of the capture — state 2 in `honesty.md`. Never present a redrawing as the screenshot itself.
+
 ## Documents to write
 - `previews/<ticket-or-slug>` — the chosen reading, the verdict, and any note.
 - `queue/<row-id>` — one document per waiting row: verdict, who, when.

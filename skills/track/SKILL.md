@@ -20,7 +20,7 @@ Trace: $ARGUMENTS
    - the default if nobody acts, and what breaks if they do not
 3. **Asked about a screen rather than a ticket?** Answer where it lives instead: the screen in staff words · the link · which hotels have it on · what it does · the open tickets touching it.
 4. **Never leave it at a status word.** `In review`, `deployed` and `done` mean nothing on their own — say what a person would see.
-5. **Anything that has not moved in 12 hours gets the stall note** from the operator-kit templates, right here — one owner, one action, a default, a consequence. Nothing in this kit can push a message by itself, so a stall surfaces the moment someone runs a command.
+5. **Anything that has not moved in 12 hours gets the stall note** — measured from when its status last really changed, never from last-updated, because some boards re-stamp tickets on a timer from the operator-kit templates, right here — one owner, one action, a default, a consequence. Nothing in this kit can push a message by itself, so a stall surfaces the moment someone runs a command.
 6. Stay in chat. Draw only if they ask for the whole product map, or the answer needs a picture of a screen.
 
 ## If something is missing

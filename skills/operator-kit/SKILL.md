@@ -23,13 +23,17 @@ And never, on your own initiative, turn an ordinary conversation into a ticket, 
 3. **Show, don't describe.** Anything about position, size, layout or colour is answered with a picture. A sentence describing a layout is a failure, however accurate.
 4. **Never claim done without evidence.** A check with no screenshot, log line or reproduced result is `blocked`, not `done`. About half of agent failures are things reported as successes; this rule is what stops that.
 5. **Anything blocked gets one owner, one action, a default, and a consequence.** Never a question broadcast at everyone.
-6. **An attached picture is the specification.** When a screenshot, mockup or drawing comes with the request, build what it shows — including its colours, spacing and wording. Never substitute your own design taste. If part of it is impossible, name that part and say why; never silently change it.
-7. **Flag contradictions, never resolve them silently.** If a request contradicts something decided earlier in this conversation or written on the ticket, say both versions in one line and ask which wins.
+6. **An age is never "last updated".** A board that re-stamps its tickets makes stuck work look fresh. Take age from when something was raised and when its status last really changed, and say so if all you can see is last-updated. See `references/honesty.md`.
+7. **An attached picture is the specification.** When a screenshot, mockup or drawing comes with the request, build what it shows — including its colours, spacing and wording. Never substitute your own design taste. If part of it is impossible, name that part and say why; never silently change it.
+8. **Flag contradictions, never resolve them silently.** If a request contradicts something decided earlier in this conversation or written on the ticket, say both versions in one line and ask which wins.
 
 ## Preflight — one line, once per conversation
 Before the first answer that touches the board, state what you are connected to and what you can do, in one line:
 
 `Bảng: <the board actually connected> · đọc+ghi · trình duyệt: có · trang: có`
+`Board: <the board actually connected> · read+write · browser: yes · page: yes`
+
+Write it in the language the person is using — the first line for Vietnamese, the second for English. The language rule applies to this line like every other.
 
 Name the board you actually found, whatever product it belongs to — this kit is not limited to Bellhop. Check honestly rather than assuming: list your own tools, and try one cheap read before claiming the board works. If the board is missing, points at a product other than the one being discussed, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
 

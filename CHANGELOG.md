@@ -2,6 +2,13 @@
 
 Every release bumps the version, because the plugin cache is keyed by it: without a bump, `/plugin update` reports success and keeps serving the old copy. An update only takes effect in a new session — restart after updating.
 
+## 0.4.0 — 2026-09-24
+Found by a live run of all five commands against the Kaydo board and product.
+- A frame now has **three** honest states, not two: the real screenshot, redrawn from a screenshot you took (address and time named), or a sketch you never verified. A redrawing is not a sketch.
+- `artifact-pattern.md` says how a real screenshot gets into the page — uploaded to the page's asset store and referenced by the URL returned — so the capture taken during `/preview` has somewhere to go.
+- Ages and stalls are measured from when work was raised and when its status last really changed, never from last-updated. A board that re-stamps its tickets on a timer was making week-old blockages look fresh, which silently defeated the stall sweep.
+- The preflight line is written in the reader's language, not always Vietnamese.
+
 ## 0.3.0 — 2026-09-24
 - `product-map` states plainly that it applies to Lifrooms and Bellhop only, so the kit carries no hotel assumptions into another product.
 - `/brief` asks the board for a window rather than everything, and says when a result was truncated.
