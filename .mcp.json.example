@@ -1,0 +1,10 @@
+{
+  "_comment": "Only use this if your ticket-board MCP is NOT already configured. If /track and /brief already find tickets, you do not need this file. Copy to .mcp.json and fill in your own values; never commit real tokens.",
+  "mcpServers": {
+    "tickets": {
+      "type": "http",
+      "url": "https://<your-board-mcp-endpoint>",
+      "headers": { "Authorization": "Bearer ${TICKETS_MCP_TOKEN}" }
+    }
+  }
+}
