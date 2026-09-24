@@ -6,6 +6,8 @@ A private web page published from this session. It can hold state, so button pre
 ## Declare it with storage and identity
 Publish with the `db` capability (so presses persist) and `user` (so a press is attributed). Load the `artifact-capabilities` skill before writing the page — it carries the exact call shapes.
 
+**If the capabilities skill or the page tool is not available on this machine**, do not guess at the API. Write a self-contained HTML file into the current folder instead, tell them the path, and put the same three lines in chat. A local file that opens is worth more than a broken link.
+
 ## Documents to write
 - `previews/<ticket-or-slug>` — the chosen reading, the verdict, and any note.
 - `queue/<row-id>` — one document per waiting row: verdict, who, when.

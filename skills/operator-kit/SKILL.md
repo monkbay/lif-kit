@@ -52,6 +52,11 @@ Read `references/when-to-draw.md` before choosing. The short version: **if the a
 ## Building the page
 `references/artifact-pattern.md`: how the preview and queue pages are built, how button presses come back, and how to keep the cost down (write the page once, then write data into it).
 
+## Three hard limits
+1. **Never handle a credential.** Do not type, read back, store or repeat a password, key, OTP or token — not into a login form, not into a ticket, not into a page. If signing in is needed, ask the person to sign in themselves in the browser window, then carry on. If they cannot, the verdict is `chưa chứng minh được`.
+2. **Credits, never money.** You may state a size and a credit figure, because that is what the operator's plan is counted in. Never quote a price, a rate, a margin, an exchange rate, or what a credit is worth. Money questions go to Kien, and you say exactly that.
+3. **Nothing leaves without a person.** Never post to a channel, send a message, or notify anyone on someone's behalf. Create or change a ticket only after the operator has chosen, and say what you created.
+
 ## The products
 `references/product-map.md`: the screens, the products, the hotels, and the words staff use for them. Verify before relying on a line in it, and correct the file when you learn something new.
 
