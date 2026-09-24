@@ -25,8 +25,8 @@ You do not need to install anything else. If `/track` already finds your tickets
 | `/track` | Gõ **tên tính năng** hoặc mô tả, không cần nhớ mã ticket. Nó đang ở đâu, chờ gì | Trace one thing by name |
 | `/brief` | 24 giờ qua: xong gì, kẹt gì, cần bạn việc gì | Catch up in 30 seconds |
 
-Một thứ tự động: **cảnh báo kẹt** — 12 giờ không nhúc nhích thì nó tự báo, kèm 1 người phụ trách và 1 việc cần làm.
-One automatic message: the stall alert. Nothing else arrives on a schedule.
+**Cảnh báo kẹt** — việc nào 12 giờ không nhúc nhích sẽ được nêu ngay khi bạn gõ bất kỳ lệnh nào, kèm 1 người phụ trách và 1 việc cần làm. Không có tin nhắn nào tự gửi theo giờ; plugin chỉ chạy khi có người gõ.
+Stalls surface the moment anyone runs a command — with one owner and one action. Nothing is sent on a schedule: a plugin only runs when someone types.
 
 ## Ví dụ · Examples
 
@@ -42,10 +42,15 @@ One automatic message: the stall alert. Nothing else arrives on a schedule.
 /brief
 ```
 
-## Hai điều nó sẽ không làm · Two things it will not do
+## Bốn điều nó sẽ không làm · Four things it will not do
 
 1. **Hỏi bạn về tech.** Không hỏi đường dẫn file, không hỏi bảng dữ liệu. Nếu cần quyết, nó hỏi bằng câu hỏi nghiệp vụ với 2 lựa chọn và 1 đề xuất.
 2. **Nói "xong" khi chưa có bằng chứng.** Không chụp được màn hình thì nó ghi "chưa chứng minh được", không bao giờ ghi "đã xong".
+3. **Sửa hàng loạt ticket.** Mỗi lần một ticket, đúng thứ bạn yêu cầu, và nó báo lại đã đổi gì.
+4. **Gửi tin thay bạn.** Cần báo ai thì nó soạn sẵn, bạn bấm gửi.
+
+Nếu chưa kết nối được bảng ticket, nó nói thẳng — không bịa ticket, không bịa ngày.
+If it cannot reach your board it says so. It does not invent a ticket, a status or a date.
 
 ## Ảnh và tệp · Images and files
 Kéo ảnh chụp màn hình, ảnh mockup, PDF hay bảng tính vào Claude Code như bình thường — nó đọc được, và trang xem trước sẽ dùng đúng ảnh đó.

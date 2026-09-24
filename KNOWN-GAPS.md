@@ -1,4 +1,4 @@
-# Things the kit cannot fix from the outside
+# Known gaps — what the kit cannot fix from the outside
 Written 2026-09-24. Nothing here blocks the kit shipping; each one makes it better.
 
 1. **A staging test login per product.** `/proof` opens the real screen. Without a stable test account on staging it falls back to production or to "not proven". This is the single highest-value item.

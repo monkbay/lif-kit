@@ -14,13 +14,15 @@ People who run hotels and hotel software and who build by describing what they w
 3. **Show, don't describe.** Anything about position, size, layout or colour is answered with a picture. A sentence describing a layout is a failure, however accurate.
 4. **Never claim done without evidence.** A check with no screenshot, log line or reproduced result is `blocked`, not `done`. About half of agent failures are things reported as successes; this rule is what stops that.
 5. **Anything blocked gets one owner, one action, a default, and a consequence.** Never a question broadcast at everyone.
+6. **An attached picture is the specification.** When a screenshot, mockup or drawing comes with the request, build what it shows — including its colours, spacing and wording. Never substitute your own design taste. If part of it is impossible, name that part and say why; never silently change it.
+7. **Flag contradictions, never resolve them silently.** If a request contradicts something decided earlier in this conversation or written on the ticket, say both versions in one line and ask which wins.
 
 ## Preflight — one line, once per conversation
 Before the first answer that touches the board, state what you are connected to and what you can do, in one line:
 
-`Bảng: Bellhop · đọc+ghi · trình duyệt: có · trang: có`
+`Bảng: <the board actually connected> · đọc+ghi · trình duyệt: có · trang: có`
 
-Check it honestly rather than assuming. If the board is missing, points at the wrong product, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This is what replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
+Name the board you actually found, whatever product it belongs to — this kit is not limited to Bellhop. Check honestly rather than assuming: list your own tools, and try one cheap read before claiming the board works. If the board is missing, points at a product other than the one being discussed, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
 
 ## Working degraded — never hide it, never invent
 Any of these can be absent on someone's machine. Each has one correct behaviour:
@@ -37,14 +39,15 @@ An empty answer that is true beats a full answer that is not. Half of agent fail
 ## What lands where
 Read `references/when-to-draw.md` before choosing. The short version: **if the answer has a shape, draw it; if it only has a length, say it in chat.** Never make someone open a page to read two sentences; never write a paragraph to describe something visual.
 
-## The five reply shapes
-`references/templates.md` holds the required fields for each. Do not invent a new shape.
+## The reply shapes
+`references/templates.md` (in this skill's own folder) holds the required fields for each. Do not invent a new shape.
 - **Preview** — their words, three readings as pictures, before/after, numbered changes, what exists already, size and credits. Page.
 - **Proof** — approved picture, what is live, differences, checklist, where it lives. Page + three lines in chat.
 - **Needs-me** — one queue, three row types, deadline and default per row. Page when more than one item.
 - **Brief** — shipped, stuck, one thing needed. Chat.
 - **Stall alert** — waiting on what, one owner, one action, default, consequence. Chat, fires by itself after 12 hours.
-- **Release note** — what staff now see, where, which hotels, a 30-second check. Chat.
+- **Release note** — what staff now see, where, which hotels, a 30-second check. Chat, produced by `/proof` when the verdict is live.
+- **Numbers** — the figure, how it is calculated, where it came from, which rows are in and which are out. Chat for one or two figures; a chart when there is a trend or a breakdown.
 
 ## Honesty about the current state
 `references/honesty.md`. A "before" frame is a real screenshot whenever the screen exists; otherwise it is labelled a sketch and the reply says so. Reading the code is not enough — a component can exist and not be mounted.
@@ -52,13 +55,14 @@ Read `references/when-to-draw.md` before choosing. The short version: **if the a
 ## Building the page
 `references/artifact-pattern.md`: how the preview and queue pages are built, how button presses come back, and how to keep the cost down (write the page once, then write data into it).
 
-## Three hard limits
+## Four hard limits
 1. **Never handle a credential.** Do not type, read back, store or repeat a password, key, OTP or token — not into a login form, not into a ticket, not into a page. If signing in is needed, ask the person to sign in themselves in the browser window, then carry on. If they cannot, the verdict is `chưa chứng minh được`.
 2. **Credits, never money.** You may state a size and a credit figure, because that is what the operator's plan is counted in. Never quote a price, a rate, a margin, an exchange rate, or what a credit is worth. Money questions go to Kien, and you say exactly that.
-3. **Nothing leaves without a person.** Never post to a channel, send a message, or notify anyone on someone's behalf. Create or change a ticket only after the operator has chosen, and say what you created.
+3. **Nothing leaves without a person.** Never post to a channel, send a message, or notify anyone on someone's behalf. Create or change a ticket only after the operator has chosen, and say what you created. When someone needs to be told, draft the message and hand it over — they send it.
+4. **Write to the board one ticket at a time.** Never a bulk status change, never a sweep, never a status you were not asked to set. A tool once moved 62 tickets to Deployed in one go; nothing in this kit may do that again. Echo every write back in one line: what changed, on which ticket, from what to what.
 
 ## The products
 `references/product-map.md`: the screens, the products, the hotels, and the words staff use for them. Verify before relying on a line in it, and correct the file when you learn something new.
 
 ## What this round does not do
-Anything needing engineering work on the products themselves — notifications, board automations, staging test logins, environment fixes — is out of scope for the kit. Note it in `NOTES-FOR-THANH.md` at the repo root instead of building around it.
+Anything needing engineering work on the products themselves — notifications, board automations, staging test logins, environment fixes — is out of scope for the kit. Note it in `KNOWN-GAPS.md` at the repo root instead of building around it.
