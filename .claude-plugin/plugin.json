@@ -1,8 +1,18 @@
 {
   "name": "lif-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Five commands for operators who build software by describing it: see a change before it is built, answer what is waiting on you, prove something shipped, trace one thing by name, and catch up on the last 24 hours. Built for Lifrooms and Bellhop.",
-  "author": { "name": "Migaki Ventures" },
-  "keywords": ["operator", "preview", "proof", "tickets", "hotel", "pms", "non-technical"],
+  "author": {
+    "name": "Migaki Ventures"
+  },
+  "keywords": [
+    "operator",
+    "preview",
+    "proof",
+    "tickets",
+    "hotel",
+    "pms",
+    "non-technical"
+  ],
   "license": "UNLICENSED"
 }

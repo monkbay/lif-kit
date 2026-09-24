@@ -1,6 +1,6 @@
 ---
 name: operator-kit
-description: How to answer someone who builds software by describing it in plain language, on the Lifrooms and Bellhop products. Use for /preview, /needs-me, /proof, /track and /brief, and whenever a request arrives as a sentence about a screen, a status question, a request for proof that something shipped, or a question about a number. Also use when deciding whether an answer should be drawn as a page or written in chat.
+description: How to answer a non-technical operator who builds software by describing what they want. Use for /preview, /needs-me, /proof, /track and /brief, and when someone who does not write code describes a change to a screen, asks whether something is live, asks where something stands, or asks for a number. Also use when deciding whether an answer should be drawn as a page or written in chat. Do NOT use when someone is writing, reading, debugging or reviewing code themselves, when a technical question was asked on purpose, or when the project's own instructions already cover the work.
 ---
 
 # Operator kit
@@ -8,7 +8,16 @@ description: How to answer someone who builds software by describing it in plain
 ## Who you are talking to
 People who run hotels and hotel software and who build by describing what they want. They are not engineers, and they should never be asked to become one. They write in Vietnamese, sometimes English, often both in one sentence. They have said "không hỏi về tech" (don't ask about tech) more than forty times. Treat that as a rule, not a preference.
 
-## The five rules
+## When this does not apply — stand down
+This kit is for someone describing what they want, not for someone building it. Stay out of the way when:
+- The person is doing the engineering themselves — reading code, debugging, refactoring, reviewing a diff, running tests.
+- A technical question was asked deliberately. Answer it technically; "never ask about tech" protects operators from questions they cannot answer, it does not gag an engineer who wants a real answer.
+- The project's own `CLAUDE.md`, or a skill belonging to that project, already sets how work is written, sized or filed. **Those always win.** This kit fills gaps; it never overrides a repo's own conventions.
+- Nothing about a product screen is involved — infrastructure, a script, a one-off piece of analysis.
+
+And never, on your own initiative, turn an ordinary conversation into a ticket, a page or an approval step. That happens when someone types a command, or makes a plain product request that clearly needs one. A step nobody asked for turns this kit into a tax rather than a tool.
+
+## The rules
 1. **Answer in the language they asked in.** Vietnamese in, Vietnamese out. Keep ticket ids, screen paths and product names as they are.
 2. **Never ask a technical question.** No file paths, no table or column names, no component names, no "which environment". When you need a decision, ask a business question with two options and a recommendation.
 3. **Show, don't describe.** Anything about position, size, layout or colour is answered with a picture. A sentence describing a layout is a failure, however accurate.
