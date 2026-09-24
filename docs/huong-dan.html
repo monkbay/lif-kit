@@ -44,113 +44,113 @@ tr:last-child td{border-bottom:none}
 </style>
 <div class="wrap">
 
-<h1>Lif Kit — hướng dẫn dùng</h1>
-<p>Năm câu lệnh để bạn yêu cầu, duyệt và kiểm tra công việc trên Bellhop và Lifrooms, mà không cần biết code.</p>
+<h1>Lif Kit — Hướng dẫn sử dụng</h1>
+<p>Năm câu lệnh để yêu cầu, duyệt và kiểm tra công việc trên Bellhop và Lifrooms, không cần biết code.</p>
 
 <h2>Cài đặt</h2>
 <ol class="install">
-<li>Mở Claude Code, gõ hai dòng này:
+<li>Mở Claude Code và gõ hai dòng sau:
 <pre>/plugin marketplace add monkbay/lif-kit
 /plugin install lif-kit@migaki</pre></li>
 <li>Khởi động lại Claude Code.</li>
-<li>Gõ <code>/</code> — bạn phải thấy năm lệnh bên dưới. Nếu chưa thấy, khởi động lại lần nữa.</li>
+<li>Gõ <code>/</code> và kiểm tra: năm câu lệnh bên dưới phải xuất hiện. Nếu chưa thấy, khởi động lại một lần nữa.</li>
 </ol>
-<p style="margin-top:16px">Khi có bản mới: gõ <code>/plugin update lif-kit@migaki</code> rồi khởi động lại. Bản mới chỉ có hiệu lực sau khi khởi động lại.</p>
+<p style="margin-top:16px">Khi có bản mới: gõ <code>/plugin update lif-kit@migaki</code> rồi khởi động lại. Bản mới chỉ có hiệu lực trong phiên làm việc mới.</p>
 
 <h2>Năm câu lệnh</h2>
 
 <div class="cmd">
   <div class="n">/preview</div>
-  <div class="w">Xem ảnh của thứ bạn muốn, trước khi có ai xây.</div>
-  <p class="lbl">Bạn gõ</p>
+  <div class="w">Xem hình của thứ bạn muốn, trước khi có người bắt đầu xây.</div>
+  <p class="lbl">Câu lệnh</p>
   <pre>/preview sơ đồ phòng chật quá, đẩy thanh bên sang phải</pre>
-  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
-    <li>Ba cách hiểu yêu cầu của bạn, mỗi cách một hình nhỏ — bạn chọn một.</li>
-    <li>Ảnh màn hình hiện tại, đặt cạnh hình sau khi sửa.</li>
-    <li>Danh sách thay đổi có số, và kích thước công việc.</li>
-    <li>Ticket được tạo sau khi bạn bấm duyệt, kèm đúng hình bạn đã chọn.</li>
+    <li>Ba cách hiểu yêu cầu của bạn, mỗi cách kèm một hình nhỏ. Bạn chọn một cách.</li>
+    <li>Hình màn hình hiện tại, đặt cạnh hình sau khi sửa.</li>
+    <li>Danh sách thay đổi được đánh số, kèm kích thước công việc.</li>
+    <li>Ticket được tạo sau khi bạn duyệt, kèm đúng hình bạn đã chọn.</li>
   </ul>
   <p class="lbl" style="margin-top:16px">Lưu ý</p>
   <ul>
-    <li>Việc nhỏ và rõ ràng, ví dụ sai chính tả: nó trả lời một dòng và tạo ticket luôn, không bắt bạn xem ba hình.</li>
-    <li>Việc lớn, hoặc dính tới tích hợp, phân quyền, nhiều khách sạn: nó cho bạn xem ticket trước khi tạo.</li>
-    <li>Báo lỗi cũng dùng lệnh này. Màn hình đã có mà chạy sai thì tính là bảo hành.</li>
-    <li>Kéo ảnh chụp màn hình hoặc ảnh mockup vào cùng lúc. Ảnh bạn gửi là chuẩn, kể cả màu sắc.</li>
+    <li>Với việc nhỏ và đã rõ ràng, ví dụ sai chính tả, Lif Kit trả lời gọn một dòng và tạo ticket ngay, không yêu cầu bạn xem ba hình.</li>
+    <li>Với việc lớn, hoặc việc liên quan tới tích hợp, phân quyền, nhiều khách sạn, Lif Kit trình bày ticket để bạn xem trước khi tạo.</li>
+    <li>Báo lỗi cũng dùng câu lệnh này. Màn hình đã có sẵn mà chạy sai thì được tính là bảo hành.</li>
+    <li>Bạn có thể kéo ảnh chụp màn hình hoặc ảnh mockup vào cùng lúc. Hình bạn gửi là chuẩn, bao gồm cả màu sắc.</li>
   </ul>
 </div>
 
 <div class="cmd">
   <div class="n">/needs-me</div>
-  <div class="w">Mọi thứ đang chờ bạn quyết, trong một danh sách.</div>
-  <p class="lbl">Bạn gõ</p>
+  <div class="w">Toàn bộ việc đang chờ bạn quyết, trong một danh sách.</div>
+  <p class="lbl">Câu lệnh</p>
   <pre>/needs-me</pre>
-  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
-    <li>Danh sách có số, ba loại: <b>Duyệt</b> một bản build, <b>Chọn</b> giữa hai phương án, <b>Gỡ kẹt</b> việc đang tắc.</li>
-    <li>Mỗi dòng ghi rõ nó thay đổi gì, ai yêu cầu, chờ bao lâu rồi.</li>
-    <li>Mỗi dòng có một phương án mặc định, sẽ áp dụng nếu tới giờ mà không ai trả lời.</li>
-    <li>Trả lời ngắn cũng được: <code>1 duyệt</code>, <code>2 chọn b</code>.</li>
+    <li>Danh sách được đánh số, gồm ba loại: <b>Duyệt</b> một bản build, <b>Chọn</b> giữa hai phương án, <b>Gỡ kẹt</b> một việc đang tắc.</li>
+    <li>Mỗi dòng ghi rõ thay đổi gì, ai yêu cầu, và đã chờ bao lâu.</li>
+    <li>Mỗi dòng kèm một phương án mặc định, sẽ áp dụng nếu đến hạn mà chưa có ai trả lời.</li>
+    <li>Bạn có thể trả lời ngắn: <code>1 duyệt</code>, <code>2 chọn b</code>.</li>
   </ul>
 </div>
 
 <div class="cmd">
   <div class="n">/proof</div>
-  <div class="w">Bằng chứng nó chạy thật, và chỗ để xem.</div>
-  <p class="lbl">Bạn gõ</p>
+  <div class="w">Bằng chứng công việc đã chạy thật, kèm chỗ để xem.</div>
+  <p class="lbl">Câu lệnh</p>
   <pre>/proof BELL-0921-0005</pre>
-  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
-    <li>Nó tự mở màn hình đó, bấm thử, và chụp lại từng bước.</li>
-    <li>Ảnh đã duyệt đặt cạnh ảnh thực tế đang chạy, kèm chỗ nào khác nhau.</li>
-    <li>Xem ở đâu: tên màn hình, đường link, khách sạn nào đã bật và chưa bật.</li>
-    <li>Một cách kiểm tra 30 giây để bạn tự xác nhận.</li>
+    <li>Lif Kit mở màn hình đó, bấm thử theo đúng đường người dùng đi, và chụp lại từng bước.</li>
+    <li>Hình đã duyệt đặt cạnh hình thực tế đang chạy, kèm những điểm khác nhau.</li>
+    <li>Xem ở đâu: tên màn hình, đường link, khách sạn nào đã bật và khách sạn nào chưa.</li>
+    <li>Một cách kiểm tra trong 30 giây để bạn tự xác nhận.</li>
   </ul>
 </div>
 
 <div class="cmd">
   <div class="n">/track</div>
-  <div class="w">Một việc đang ở đâu, chờ gì. Gõ tên, không cần nhớ mã ticket.</div>
-  <p class="lbl">Bạn gõ</p>
+  <div class="w">Một việc đang ở đâu và đang chờ gì. Gõ tên, không cần nhớ mã ticket.</div>
+  <p class="lbl">Câu lệnh</p>
   <pre>/track sơ đồ phòng
 /track cái quỹ tiền mặt lễ tân</pre>
-  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
     <li>Mốc thời gian: tạo lúc nào, xây lúc nào, chờ từ lúc nào.</li>
-    <li>Đang chờ gì, một câu.</li>
+    <li>Đang chờ gì, trình bày trong một câu.</li>
     <li>Một người phụ trách và một việc cần làm, kèm thời gian dự kiến.</li>
-    <li>Hỏi về một màn hình thì nó trả lời màn hình đó nằm ở đâu và khách sạn nào đang bật.</li>
+    <li>Khi bạn hỏi về một màn hình, kết quả là màn hình đó nằm ở đâu và khách sạn nào đang bật.</li>
   </ul>
 </div>
 
 <div class="cmd">
   <div class="n">/brief</div>
-  <div class="w">24 giờ qua: xong gì, kẹt gì, cần bạn việc gì.</div>
-  <p class="lbl">Bạn gõ</p>
+  <div class="w">24 giờ qua: việc đã xong, việc còn kẹt, việc cần bạn.</div>
+  <p class="lbl">Câu lệnh</p>
   <pre>/brief</pre>
-  <p class="lbl" style="margin-top:16px">Bạn nhận</p>
+  <p class="lbl" style="margin-top:16px">Kết quả nhận được</p>
   <ul>
     <li>Việc đã tới khách sạn trong 24 giờ, viết bằng lời thường.</li>
     <li>Việc còn kẹt, kèm người phụ trách và số ngày.</li>
-    <li>Một việc cần bạn hôm nay.</li>
-    <li>Việc nào kẹt quá 12 giờ sẽ được nêu ngay, kèm người phụ trách và việc cần làm.</li>
+    <li>Một việc cần bạn xử lý hôm nay.</li>
+    <li>Việc kẹt quá 12 giờ được nêu ngay, kèm người phụ trách và việc cần làm.</li>
   </ul>
 </div>
 
-<h2>Bốn điều nó không làm</h2>
-<div class="rule"><b>Không hỏi bạn về tech</b>Không hỏi đường dẫn file, không hỏi bảng dữ liệu. Cần quyết thì nó hỏi bằng câu hỏi nghiệp vụ, kèm hai lựa chọn và một đề xuất.</div>
-<div class="rule"><b>Không nói "xong" khi chưa có bằng chứng</b>Không mở được màn hình thì nó ghi "chưa chứng minh được" và nói cần gì để chứng minh.</div>
-<div class="rule"><b>Không sửa hàng loạt ticket</b>Mỗi lần một ticket, đúng thứ bạn yêu cầu, và nó báo lại đã đổi gì.</div>
-<div class="rule"><b>Không gửi tin thay bạn</b>Cần báo ai thì nó soạn sẵn, bạn bấm gửi.</div>
+<h2>Bốn việc Lif Kit không làm</h2>
+<div class="rule"><b>Không hỏi bạn về tech</b>Không hỏi đường dẫn file, không hỏi bảng dữ liệu. Khi cần bạn quyết, Lif Kit đặt câu hỏi nghiệp vụ kèm hai lựa chọn và một đề xuất.</div>
+<div class="rule"><b>Không ghi "đã xong" khi chưa có bằng chứng</b>Nếu không mở được màn hình, Lif Kit ghi "chưa chứng minh được" và nêu rõ cần gì để chứng minh.</div>
+<div class="rule"><b>Không sửa hàng loạt ticket</b>Mỗi lần một ticket, đúng phạm vi bạn yêu cầu, và báo lại đã thay đổi những gì.</div>
+<div class="rule"><b>Không gửi tin thay bạn</b>Khi cần thông báo cho ai, Lif Kit soạn sẵn nội dung. Người gửi là bạn.</div>
 
-<h2>Khi nó không làm được</h2>
+<h2>Khi Lif Kit chưa xử lý được</h2>
 <table>
-<tr><th>Tình huống</th><th>Nó sẽ làm gì</th></tr>
-<tr><td>Chưa kết nối bảng ticket</td><td>Nói thẳng ngay dòng đầu và chỉ cách sửa. Không bịa ticket, không bịa ngày.</td></tr>
-<tr><td>Không mở được màn hình</td><td>Ghi "chưa chứng minh được", kèm cách kiểm tra 30 giây để bạn tự xem.</td></tr>
-<tr><td>Chưa có tài khoản test trên staging</td><td>Nói rõ đó là việc đang chặn. Không test trên dữ liệu thật của khách sạn.</td></tr>
-<tr><td>Cần đăng nhập</td><td>Nhờ bạn tự đăng nhập. Nó không bao giờ nhận mật khẩu hay mã OTP.</td></tr>
-<tr><td>Hỏi về giá, chi phí, credit</td><td>Chuyển cho Kien. Nó chỉ nói kích thước công việc.</td></tr>
+<tr><th>Tình huống</th><th>Cách xử lý</th></tr>
+<tr><td>Chưa kết nối bảng ticket</td><td>Báo ngay ở dòng đầu và chỉ rõ một bước để sửa. Không bịa ticket, không bịa ngày.</td></tr>
+<tr><td>Không mở được màn hình</td><td>Ghi "chưa chứng minh được", kèm cách kiểm tra trong 30 giây để bạn tự xem.</td></tr>
+<tr><td>Chưa có tài khoản test trên staging</td><td>Nêu rõ đây là việc đang chặn. Không test trên dữ liệu thật của khách sạn.</td></tr>
+<tr><td>Cần đăng nhập</td><td>Đề nghị bạn tự đăng nhập. Lif Kit không nhận mật khẩu hoặc mã OTP trong mọi trường hợp.</td></tr>
+<tr><td>Câu hỏi về giá hoặc chi phí</td><td>Chuyển cho Kien. Lif Kit chỉ nêu kích thước công việc.</td></tr>
 </table>
 
 </div>
