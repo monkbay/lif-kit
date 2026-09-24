@@ -7,7 +7,7 @@ Five commands for people who build software by describing it. For the Lifrooms a
 In Claude Code, run these two lines:
 
 ```
-/plugin marketplace add <owner>/lif-kit
+/plugin marketplace add monkbay/lif-kit
 /plugin install lif-kit@migaki
 ```
 

@@ -14,5 +14,6 @@
     "pms",
     "non-technical"
   ],
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "repository": "https://github.com/monkbay/lif-kit"
 }
