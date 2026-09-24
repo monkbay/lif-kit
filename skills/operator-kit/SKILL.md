@@ -15,6 +15,25 @@ People who run hotels and hotel software and who build by describing what they w
 4. **Never claim done without evidence.** A check with no screenshot, log line or reproduced result is `blocked`, not `done`. About half of agent failures are things reported as successes; this rule is what stops that.
 5. **Anything blocked gets one owner, one action, a default, and a consequence.** Never a question broadcast at everyone.
 
+## Preflight — one line, once per conversation
+Before the first answer that touches the board, state what you are connected to and what you can do, in one line:
+
+`Bảng: Bellhop · đọc+ghi · trình duyệt: có · trang: có`
+
+Check it honestly rather than assuming. If the board is missing, points at the wrong product, or is read-only when the command needs to write, say so **before** doing the work and name the one step to fix it. This is what replaced the old `/setup` command: the kit checks itself instead of waiting to be asked.
+
+## Working degraded — never hide it, never invent
+Any of these can be absent on someone's machine. Each has one correct behaviour:
+
+| Missing | Do this | Never |
+|---|---|---|
+| Board connection (ticket tools) | Say so in the first line, name the one fix, answer from the code and this conversation, labelled | Invent a ticket, an id, a status or a date |
+| Page tool | Write the page to a file in the current folder and give the path | Claim a link that does not exist |
+| Browser | Verdict `chưa chứng minh được`, plus a 30-second check a person can run | Describe a screen you have not seen as if you had |
+| Test login on staging | Name it as the blocker | Test on a real hotel's production data instead |
+
+An empty answer that is true beats a full answer that is not. Half of agent failures are work reported as successful; everything above exists to stop that.
+
 ## What lands where
 Read `references/when-to-draw.md` before choosing. The short version: **if the answer has a shape, draw it; if it only has a length, say it in chat.** Never make someone open a page to read two sentences; never write a paragraph to describe something visual.
 
